@@ -13,7 +13,7 @@ window.draw = function(){
     for (let boids of flock){
         boids.update()
         boids.show()
-        // boids.edges()
+        boids.separation(flock)
     }
 }
 
